@@ -55,7 +55,7 @@
                         </ul>
                         <<div class="card" align="center">
                         <form action="Booking.php" method="GET">
-                            <button type="submit" value="Nusantara" name="type" class="btn btn-primary">Book Now</button>
+                            <button type="button" value="=nusantara" name="type" class="btn btn-primary">Book Now</button>
                         </form>
                     </div>
                     </div>
@@ -79,7 +79,7 @@
                             </ul>
                             <div class="card" align="center">
                         <form action="Booking.php" method="GET">
-                            <button type="submit" value="Keong" name="type" class="btn btn-primary">Book Now</button>
+                            <button type="button" value="Siput" name="type" class="btn btn-primary">Book Now</button>
                         </form>
                     </div>
                         </div>
@@ -103,7 +103,7 @@
                             </ul>
                             <div class="card" align="center">
                         <form action="Booking.php" method="GET">
-                            <button type="submit" value="Serbaguna" name="type" class="btn btn-primary">Book Now</button>
+                            <button type="button" value="Serbaganu" name="type" class="btn btn-primary">Book Now</button>
                         </form>
                     </div>
                         </div>

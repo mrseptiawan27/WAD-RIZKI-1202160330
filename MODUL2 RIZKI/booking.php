@@ -63,8 +63,8 @@
                         <div class="mb-3">
                             <label class="form-label">Type</label>
                             <?php
-                        if (isset($_GET['type'])) {
-                            $type =$_GET['type'];
+                        if (isset($GET['type'])) {
+                            $type =$GET['type'];
                         }
                         if (!empty($type)) {
                             echo '<input type="text" class="form-control" id="Nusantara" name="type" readonly value = '.$type.'>';

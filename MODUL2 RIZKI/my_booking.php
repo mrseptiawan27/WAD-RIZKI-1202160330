@@ -72,7 +72,7 @@
                             $date=$date;
                             $dateNew=new DateTime($date);
                             $dateout=$dateNew->modify("+$duration days");
-                            echo $dateout->format("Y-m-d");
+                            echo $dateout->format("d-m-Y");
                             ?>
                         </td>
 
@@ -85,7 +85,7 @@
                             echo ("no service");
                             }
                             else {
-                            $c=count($Fasilitas);
+                            $c=round($Fasilitas);
                             echo "<ul>";
                             for ($i=0; $i<$c; $i++) {
                                 echo "<li> $Fasilitas[$i] </li>";
