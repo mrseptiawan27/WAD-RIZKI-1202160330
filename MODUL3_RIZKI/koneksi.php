@@ -2,12 +2,12 @@
 $host="localhost";
 $user="root";
 $pass="";
-$database="modul3";
+$database="wad-modul3";
 
-$koneksi = mysqli_connect("localhost","root","","modul3");
+$conf = mysqli_connect("localhost","root","",$database);
 
 if ($koneksi){
-    $buka=mysqli_select_db ($koneksi,$database);
+    $buka=mysqli_select_db ($conf,$database);
     echo "terhubung";
     if (!$buka){
         echo "tidak terhubung";
@@ -15,4 +15,3 @@ if ($koneksi){
 } else {
     echo "MySql tidak terhubung";
 }
-?>

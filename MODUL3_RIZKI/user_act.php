@@ -28,8 +28,8 @@ $tag 					= $_POST['tag'];
 
 
 if ($judul_buku && $judul_buku && $tahun_terbit && $deskripsi && $gambar && $bahasa && $tag ) {
-	if ($op == 'edit') { //untuk update
-		$sql1       = "update  set buku_table = '$judul_buku',penulis_buku='$penulis_buku',tahun_terbit = '$tahun_terbit',deskripsi='$deskripsi',gambar = '$gambar,'bahasa = '$bahasa',tag = '$tag',where id = '$id'";
+	if ($op != 'edit') { //untuk update
+		$sql1       = "update  set buku_table = '$judul_buku',penulis_buku='$penulis_buku',tahun_terbit = '$tahun_terbit',deskripsi='$deskripsi',gambar = '$gambar,'bahasa = '$bahasa',tag = '$tag',where id = 'id'";
 		$q1         = mysqli_query($koneksi, $sql1);
 		if ($q1) {
 			$sukses = "Data berhasil diupdate";
@@ -68,6 +68,3 @@ if(!in_array($ext,$ekstensi) ) {
 		header("location:index.php?alert=gagak_ukuran");
 	}
 }
-
-
-?>
